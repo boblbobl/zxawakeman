@@ -42,20 +42,20 @@ Sub movePlayer()
     Let vy = 0
 
     Let k$ = INKEY$
-    IF k$ = "q" THEN LET vy=-1
-    IF k$ = "a" THEN LET vy=1
-    IF k$ = "o" THEN LET vx=-1
-    IF k$ = "p" THEN LET vx=1
+    If k$ = "q" Then Let vy=-1
+    If k$ = "a" Then Let vy=1
+    If k$ = "o" Then Let vx=-1
+    If k$ = "p" Then Let vx=1
 
-    IF vx <> 0 OR vy <> 0 THEN
-        PRINT AT y,x;" "
+    If vx <> 0 OR vy <> 0 Then
+        Print At y,x;" "
 
         LET x = x+vx
-        IF x < 0 THEN LET x = 0
-        IF x > 31 THEN LET x = 31
-        LET y = y+vy
-        IF y < 1 THEN LET y = 1
-        IF y > 21 THEN LET y = 21
+        If x < 0 Then Let x = 0
+        If x > 31 Then Let x = 31
+        Let y = y+vy
+        If y < 1 Then Let y = 1
+        If y > 21 Then Let y = 21
 
         If limes(y,x) = 1 Then
             limes(y,x) = 0
@@ -79,5 +79,4 @@ Do
     End Asm
 
     movePlayer()
-    
 Loop

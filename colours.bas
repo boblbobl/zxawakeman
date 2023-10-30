@@ -1,0 +1,14 @@
+10 FOR l=0 to 7
+20 PAPER 7: BRIGHT 0
+30 PRINT AT l*2,0;l
+40 PAPER l
+50 FOR m=1 to 15
+51 PRINT AT l*2,m;" ";
+52 PRINT AT l*2+1,m;" ";
+53 NEXT m
+60 FOR n=16 to 31
+61 BRIGHT 1
+62 PRINT AT l*2,n;" ";
+63 PRINT AT l*2+1,n;" ";
+64 NEXT n
+70 NEXT l
